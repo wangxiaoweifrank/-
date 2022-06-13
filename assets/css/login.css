@@ -1,0 +1,49 @@
+html,
+body{
+    margin: 0;
+    padding: 0;
+    background: url(/assets/images/login_bg.jpg) no-repeat top center;
+    background-size: cover;
+}
+
+.login-box{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 400px;
+    height: 310px;
+    background-color: #fff;
+    transform: translate(-50%,-50%);
+}
+
+.header{
+    height: 60px;
+    background: url(/assets/images/login_title.png) no-repeat center;
+}
+
+/* 登陆 */
+.login{
+    padding: 0 20px;
+}
+
+#link_reg,
+#link_login{
+    float: right;
+}
+
+.reg{
+    display: none;
+    padding: 0 25px;
+}
+
+.layui-form-item{
+    position: relative;
+}
+.layui-form-item input{
+    padding-left: 35px;
+}
+.layui-icon{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}

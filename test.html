@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>练习复习页</title>
+</head>
+<style>
+    .big{
+        font-size: 50px;
+        background-color: aqua;
+    }
+    .small{
+        font-size: 10px;
+        background-color: #fff;
+    }
+</style>
+<body>
+    <button>哈哈</button>
+    
+
+    <script>
+        class Prosen{
+            constructor(uname){
+                this.name = uname
+            }
+        }
+        
+        var zs = new Prosen('张三')
+        console.log(zs.name);
+
+        class Chinese extends Prosen{
+            constructor(age){
+                super()
+                this.age = age
+            }
+        }
+        var ls = new Chinese(20)
+        console.log(ls.age);
+        
+    </script>    
+</body>
+</html>
