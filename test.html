@@ -7,38 +7,20 @@
     <title>练习复习页</title>
 </head>
 <style>
-    .big{
-        font-size: 50px;
-        background-color: aqua;
-    }
-    .small{
-        font-size: 10px;
-        background-color: #fff;
+    div{
+        float: left;
+        width: 300px;
+        height: 300px;
+        margin-left: 50%;
+        background-color: antiquewhite;
+        /* transform: translate(-50%); */
     }
 </style>
 <body>
-    <button>哈哈</button>
+    <div></div>
+    <div></div>
     
 
-    <script>
-        class Prosen{
-            constructor(uname){
-                this.name = uname
-            }
-        }
-        
-        var zs = new Prosen('张三')
-        console.log(zs.name);
-
-        class Chinese extends Prosen{
-            constructor(age){
-                super()
-                this.age = age
-            }
-        }
-        var ls = new Chinese(20)
-        console.log(ls.age);
-        
-    </script>    
+ 
 </body>
 </html>

@@ -3,5 +3,12 @@
 $.ajaxPrefilter(function(option){
     // 进行url拼接
     option.url = 'http://www.liulongbin.top:3007' + option.url
-    console.log(option.url);
+    
+    // 统一为有权限接口，设置headers
+    if(option.url.indexOf('/my/') !== -1){
+        option.headers = {
+            Authorization: localStorage.getItem('token') || ''
+        }
+    }
+    
 })
